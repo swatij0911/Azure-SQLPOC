@@ -11,7 +11,7 @@ namespace WebApp.Pages
        
         private readonly IProductService productService;
 
-        IndexModel(IProductService _productService)
+        public IndexModel(IProductService _productService)
         {          
             productService = _productService;
         }
