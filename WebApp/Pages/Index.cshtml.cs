@@ -9,11 +9,11 @@ namespace WebApp.Pages
     {
         public List<Product> products;
        
-        public IProductService productService;
+        private readonly IProductService productService;
 
         IndexModel(IProductService _productService)
         {          
-            this.productService = _productService;
+            productService = _productService;
         }
 
         public void OnGet()
